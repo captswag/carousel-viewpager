@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CarouselViewPager</string>
+    <string name="car_image">car_image</string>
+</resources>

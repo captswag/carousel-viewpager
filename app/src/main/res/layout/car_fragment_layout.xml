@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_100dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/_100dp"
+        card_view:cardElevation="@dimen/_2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/car_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".6"
+                android:contentDescription="@string/car_image"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/chevrolet_corvette_stingray" />
+
+            <LinearLayout
+                android:id="@+id/text_background"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/car_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18sp"
+                    tools:text="Chevrolet Corvette Stingray" />
+
+                <TextView
+                    android:id="@+id/car_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    tools:text="6.2 L LT4 supercharged V8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
