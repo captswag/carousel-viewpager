@@ -1,4 +1,4 @@
-package anjithsasindran.carouselviewpager.activity.callback;
+package anjithsasindran.carouselviewpager.callback;
 
 /**
  * Created by Anjith Sasindran

@@ -1,4 +1,4 @@
-package anjithsasindran.carouselviewpager.activity.fragments;
+package anjithsasindran.carouselviewpager.fragments;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import anjithsasindran.carouselviewpager.R;
-import anjithsasindran.carouselviewpager.activity.callback.CallbackToActivity;
+import anjithsasindran.carouselviewpager.callback.CallbackToActivity;
 
 /**
  * Created by Anjith Sasindran
@@ -59,28 +59,28 @@ public class CarFragment extends Fragment {
                 setColors(R.mipmap.chevrolet_corvette_stingray);
                 break;
             case 1:
-                setCarImage(R.mipmap.bugatti);
-                setCarName("Bugatti Veyron");
-                setCarDetails("8.0 L W16 Quad-Turbocharged");
-                setColors(R.mipmap.bugatti);
+                setCarImage(R.mipmap.pagani_zonda_cinque);
+                setCarName("Pagani Zonda Cinque");
+                setCarDetails("7.3 L AMG V12");
+                setColors(R.mipmap.pagani_zonda_cinque);
                 break;
             case 2:
-                setCarImage(R.mipmap.ferrari_458_italia);
-                setCarName("Ferrari 458 Italia");
-                setCarDetails("4.5 L Ferrari F136 F V8");
-                setColors(R.mipmap.ferrari_458_italia);
-                break;
-            case 3:
                 setCarImage(R.mipmap.lamborghini_aventador);
                 setCarName("Lamborghini Aventador");
                 setCarDetails("6.5 L L539 V12");
                 setColors(R.mipmap.lamborghini_aventador);
                 break;
+            case 3:
+                setCarImage(R.mipmap.bugatti);
+                setCarName("Bugatti Veyron");
+                setCarDetails("8.0 L W16 Quad-Turbocharged");
+                setColors(R.mipmap.bugatti);
+                break;
             case 4:
-                setCarImage(R.mipmap.pagani_zonda_cinque);
-                setCarName("Pagani Zonda Cinque");
-                setCarDetails("7.3 L AMG V12");
-                setColors(R.mipmap.pagani_zonda_cinque);
+                setCarImage(R.mipmap.mclaren_p1);
+                setCarName("McLaren P1");
+                setCarDetails("3.8 L twin-turbo M838TQ V8");
+                setColors(R.mipmap.mclaren_p1);
                 break;
         }
     }
@@ -106,16 +106,12 @@ public class CarFragment extends Fragment {
                 public void onGenerated(Palette palette) {
                     vibrantColor = palette.getVibrantColor(defaultColor);
                     mutedColor = palette.getMutedColor(defaultColor);
-
                     obj.colorFetched(position, vibrantColor, mutedColor);
-
                     textBackground.setBackgroundColor(vibrantColor);
-                    fragmentContainer.setBackgroundColor(mutedColor);
                 }
             });
         } else {
             textBackground.setBackgroundColor(vibrantColor);
-            fragmentContainer.setBackgroundColor(mutedColor);
         }
     }
 

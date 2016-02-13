@@ -15,7 +15,7 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/_100dp"
-        card_view:cardElevation="@dimen/_2dp">
+        card_view:cardElevation="@dimen/_4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
